@@ -1,0 +1,46 @@
+//import Scanner as we require it.
+import java.util.Scanner;
+//the name of our class its public
+ public class TwoNumbers {
+ 
+	//void main
+ public static void main ( String[] args )
+ {
+	  //Take input
+	    Scanner input = new Scanner ( System.in );
+	  //declare int    
+	    int number1;
+	    int number2;
+	    int sum;
+	    int subtract;
+	    int multiply;
+	    int divide;
+	    int mod;
+	    String word = "and";
+//print message
+	   System.out.print( "Enter first number:" );
+
+	   number1 = input.nextInt();
+
+	
+	   System.out.print( "Enter second number:" );
+
+	    number2 = input.nextInt();
+	    
+	    sum = number1 + number2;
+	    divide = number1/number2;
+	    multiply = number1*number2;
+	    subtract = number1-number2;
+	    mod = number1% number2;
+	    
+
+	//print 
+	   System.out.printf ("Hello, you enter: %d %s %d",number1,word,number2);
+	   System.out.printf ("sum is %d\n", sum);
+	   System.out.printf ("dividing is %d\n", divide);
+	   System.out.printf ("multiply is %d\n", multiply);
+	   System.out.printf ("subtraction is %d\n", subtract);
+	   System.out.printf ("remainder is %d\n", mod);
+ }
+ }
+	  
